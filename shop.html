@@ -26,6 +26,7 @@
     <main>
         <section class="shop">
             <h1>Glow Gummies - Buy Now</h1>
+            
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                     <!-- Product 1 -->
@@ -35,6 +36,28 @@
                             <h2>Glow Gummies - Strawberry</h2>
                             <p class="price">Rs.300 per box</p>
                             <p class="description">Delicious strawberry-flavored skin-boosting gummies.</p>
+                            <button class="cta-button">Add to Cart</button>
+                        </div>
+                    </div>
+        
+                    <!-- Product 2 -->
+                    <div class="swiper-slide product">
+                        <img src="images/product2.webp" alt="Glow Gummies" class="product-image">
+                        <div class="product-details">
+                            <h2>Glow Gummies - Blueberry</h2>
+                            <p class="price">Rs.320 per box</p>
+                            <p class="description">Antioxidant-rich blueberry gummies for a radiant glow.</p>
+                            <button class="cta-button">Add to Cart</button>
+                        </div>
+                    </div>
+        
+                    <!-- Product 3 -->
+                    <div class="swiper-slide product">
+                        <img src="images/product3.webp" alt="Glow Gummies" class="product-image">
+                        <div class="product-details">
+                            <h2>Glow Gummies - Mango</h2>
+                            <p class="price">Rs.310 per box</p>
+                            <p class="description">Tropical mango flavor with added Vitamin C & E.</p>
                             <button class="cta-button">Add to Cart</button>
                         </div>
                     </div>
@@ -62,12 +85,13 @@
                     </div>
                 </div>
         
-                <!-- Pagination & Navigation Buttons -->
+                <!-- Navigation Buttons -->
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination"></div>
             </div>
         </section>
+        
         
     </main>
     
@@ -89,9 +113,9 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,  // Show 3 products at a time on large screens
+        slidesPerView: 3,  // Default: 3 products per view
         spaceBetween: 20,
-        loop: true,
+        loop: true, 
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
@@ -101,12 +125,13 @@
             clickable: true,
         },
         breakpoints: {
-            1024: { slidesPerView: 3 }, // Desktop
-            768: { slidesPerView: 2 }, // Tablet
-            480: { slidesPerView: 1 }, // Mobile
+            1024: { slidesPerView: 3 }, // Desktop: Show 3 products
+            768: { slidesPerView: 2 },  // Tablet: Show 2 products
+            480: { slidesPerView: 1 },  // Mobile: Show 1 product
         }
     });
 </script>
+
 
 
 </body>
