@@ -808,3 +808,43 @@ footer {
       font-size: 1rem;
   }
 }
+.swiper {
+  width: 100%;
+  max-width: 1000px;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-details {
+  margin-top: 10px;
+}
+
+.cta-button {
+  background-color: #4722da;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #ff4500;
+}

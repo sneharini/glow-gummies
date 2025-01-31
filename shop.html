@@ -6,6 +6,8 @@
     <title>Shop - Glow Gummies</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 <body>
     <header>
@@ -24,20 +26,49 @@
     <main>
         <section class="shop">
             <h1>Glow Gummies - Buy Now</h1>
-            <div class="product">
-                <!-- Product Image -->
-                <img src="images/product.webp" alt="Glow Gummies" class="product-image">
-                <div class="product-details">
-                    <h2>Glow Gummies</h2>
-                    <p class="price">Rs.300 per box</p>
-                    <p class="description">Enhance your skin's natural glow with our 100% natural ingredients. Get radiant, healthy skin with every gummy!</p>
-                    <div class="buttons">
-                        <button id="add-to-cart" class="cta-button">Add to Cart</button>
-                        <button id="buy-now" class="cta-button buy-now">Buy Now</button>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Product 1 -->
+                    <div class="swiper-slide product">
+                        <img src="images/product1.webp" alt="Glow Gummies" class="product-image">
+                        <div class="product-details">
+                            <h2>Glow Gummies - Strawberry</h2>
+                            <p class="price">Rs.300 per box</p>
+                            <p class="description">Delicious strawberry-flavored skin-boosting gummies.</p>
+                            <button class="cta-button">Add to Cart</button>
+                        </div>
+                    </div>
+        
+                    <!-- Product 4 -->
+                    <div class="swiper-slide product">
+                        <img src="images/product4.webp" alt="Glow Gummies" class="product-image">
+                        <div class="product-details">
+                            <h2>Glow Gummies - Orange</h2>
+                            <p class="price">Rs.290 per box</p>
+                            <p class="description">Zesty orange gummies to boost collagen production.</p>
+                            <button class="cta-button">Add to Cart</button>
+                        </div>
+                    </div>
+        
+                    <!-- Product 5 -->
+                    <div class="swiper-slide product">
+                        <img src="images/product5.webp" alt="Glow Gummies" class="product-image">
+                        <div class="product-details">
+                            <h2>Glow Gummies - Mixed Fruit</h2>
+                            <p class="price">Rs.330 per box</p>
+                            <p class="description">A mix of your favorite fruit flavors for daily skincare.</p>
+                            <button class="cta-button">Add to Cart</button>
+                        </div>
                     </div>
                 </div>
+        
+                <!-- Pagination & Navigation Buttons -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
             </div>
         </section>
+        
     </main>
     
 
@@ -54,5 +85,29 @@
             alert("Proceeding to checkout...");
         });
     </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,  // Show 3 products at a time on large screens
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+            1024: { slidesPerView: 3 }, // Desktop
+            768: { slidesPerView: 2 }, // Tablet
+            480: { slidesPerView: 1 }, // Mobile
+        }
+    });
+</script>
+
+
 </body>
 </html>
