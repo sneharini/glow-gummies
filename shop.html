@@ -6,8 +6,6 @@
     <title>Shop - Glow Gummies</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
 </head>
 <body>
     <header>
@@ -26,76 +24,28 @@
     <main>
         <section class="shop">
             <h1>Glow Gummies - Buy Now</h1>
-            
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <!-- Product 1 -->
-                    <div class="swiper-slide product">
-                        <img src="images/product1.webp" alt="Glow Gummies" class="product-image">
-                        <div class="product-details">
-                            <h2>Glow Gummies - Strawberry</h2>
-                            <p class="price">Rs.300 per box</p>
-                            <p class="description">Delicious strawberry-flavored skin-boosting gummies.</p>
-                            <button class="cta-button">Add to Cart</button>
-                        </div>
-                    </div>
-        
-                    <!-- Product 2 -->
-                    <div class="swiper-slide product">
-                        <img src="images/product2.webp" alt="Glow Gummies" class="product-image">
-                        <div class="product-details">
-                            <h2>Glow Gummies - Blueberry</h2>
-                            <p class="price">Rs.320 per box</p>
-                            <p class="description">Antioxidant-rich blueberry gummies for a radiant glow.</p>
-                            <button class="cta-button">Add to Cart</button>
-                        </div>
-                    </div>
-        
-                    <!-- Product 3 -->
-                    <div class="swiper-slide product">
-                        <img src="images/product3.webp" alt="Glow Gummies" class="product-image">
-                        <div class="product-details">
-                            <h2>Glow Gummies - Mango</h2>
-                            <p class="price">Rs.310 per box</p>
-                            <p class="description">Tropical mango flavor with added Vitamin C & E.</p>
-                            <button class="cta-button">Add to Cart</button>
-                        </div>
-                    </div>
-        
-                    <!-- Product 4 -->
-                    <div class="swiper-slide product">
-                        <img src="images/product4.webp" alt="Glow Gummies" class="product-image">
-                        <div class="product-details">
-                            <h2>Glow Gummies - Orange</h2>
-                            <p class="price">Rs.290 per box</p>
-                            <p class="description">Zesty orange gummies to boost collagen production.</p>
-                            <button class="cta-button">Add to Cart</button>
-                        </div>
-                    </div>
-        
-                    <!-- Product 5 -->
-                    <div class="swiper-slide product">
-                        <img src="images/product5.webp" alt="Glow Gummies" class="product-image">
-                        <div class="product-details">
-                            <h2>Glow Gummies - Mixed Fruit</h2>
-                            <p class="price">Rs.330 per box</p>
-                            <p class="description">A mix of your favorite fruit flavors for daily skincare.</p>
-                            <button class="cta-button">Add to Cart</button>
-                        </div>
+            <div class="product">
+                <!-- Product Image -->
+                <img src="images/shop.jpeg" alt="Glow Gummies" class="product-image">
+                <div class="product-details">
+                    <h2>ABC Gummies</h2>
+                    <p class="price">₹250 per pack | 20 gummies per pack</p>
+                    <p class = "price">Apple, Beetroot, Carrot</p>
+                    <p class="description">Nourish your skin from within with ABC Gummies! Packed with 100% natural ingredients, our delicious gummies support radiant, healthy skin by providing essential vitamins and nutrients.</p>
+                    <div class="buttons">
+                        <button id="add-to-cart" class="cta-button">Add to Cart</button>
+                        <button id="buy-now" class="cta-button buy-now">Buy Now</button>
                     </div>
                 </div>
-        
-                <!-- Navigation Buttons -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </section>
-        
-        
+        <section class="customization">
+            <h2>Customize Your Glow Gummies</h2>
+            <p>To cater to customers with specific allergies or sensitivities, we offer customization options for our Gummies.</p>
+            <button class="customize-btn">Customize Now</button>
+        </section>
     </main>
     
-
     <footer>
         <p>&copy; 2024 Glow Gummies. All rights reserved.</p>
     </footer>
@@ -109,30 +59,5 @@
             alert("Proceeding to checkout...");
         });
     </script>
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 3,  // Default: 3 products per view
-        spaceBetween: 20,
-        loop: true, 
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            1024: { slidesPerView: 3 }, // Desktop: Show 3 products
-            768: { slidesPerView: 2 },  // Tablet: Show 2 products
-            480: { slidesPerView: 1 },  // Mobile: Show 1 product
-        }
-    });
-</script>
-
-
-
 </body>
 </html>
